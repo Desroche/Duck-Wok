@@ -1,3 +1,41 @@
 body {
-    background-color: #250f41;
+    color: #f5f105;
+    background-color: #130526;
+    margin: 0%;
+    padding: 0%;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    background-color: #9e0e18;
+}
+
+.dropDown {
+    margin-left: auto;
+    margin-right: 2rem;
+    align-self: center;
+}
+
+.dropDownBtn {
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    font-size: medium;
+    border-style: solid;
+    cursor: pointer;
+    background-color: #f5f105;
+    color: #9e0e18;
+}
+
+.dropDownBtn:hover {
+    background-color: aqua;
+}
+
+#duckWokLogo {
+    height: auto;
+    width: 150px;
 }
