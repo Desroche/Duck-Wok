@@ -1,0 +1,151 @@
+/* ------- Body details -----------*/
+
+body {
+    color: #f5f105;
+    background-color: #9e0e18;
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}
+
+/* ------- Body details END -----------*/
+
+
+
+
+
+
+/*------- Nav Bar and Drop Down Button Section ------*/
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    background-color: #9e0e18;
+    z-index: 1000;
+}
+
+.navbar h1 {
+    text-align: center;
+    float: right;
+}
+
+.dropDown {
+    margin-left: auto;
+    margin-right: 2rem;
+    align-self: center;
+    overflow: hidden;
+}
+
+.dropDownBtn {
+    width: 120px;
+    height: 40px;
+    border-radius: 8px;
+    font-size: medium;
+    border-style: solid;
+    cursor: pointer;
+    background-color: #f5f105;
+    color: #9e0e18;
+}
+
+.dropDown .dropDownBtn {
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropDown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.dropDown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.dropDown-content a:hover {
+    background-color: #ddd;
+  }
+
+.dropDown:hover .dropDown-content {
+    display: block;
+  }
+
+.dropDownBtn:hover {
+    background-color: aqua;
+}
+
+#duckWokLogo {
+    height: auto;
+    width: 150px;
+}
+
+/*------- Nav Bar and Drop Down Button Section END ------*/
+
+
+
+
+
+/*--------------- Main -------------*/
+
+.main-container {
+    padding-top: 100px;
+}
+
+/*--------------- Main END -------------*/
+
+
+
+
+
+
+/*----------------------- Footer Section ---------------*/
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #850b13;
+}
+
+.footer-container h3 {
+    align-items: center;
+    margin-left: 2rem;
+}
+
+#social-tags {
+    margin-left: auto;
+    margin-right: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*----------------------- Footer Section END -----------*/
+
+/* ------------ Media Query ---------- */
+
+@media only screen and (max-width:1100px) {
+    .fade-in-container {
+        flex-direction: column;
+    }
+    #fade-image {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1rem;
+    }
+    #fade-text {
+        text-align: center;
+    }
+}
