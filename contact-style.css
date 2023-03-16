@@ -5,13 +5,13 @@ body {
     background-color: #9e0e18;
     margin: 0%;
     padding: 0%;
-    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Flamenco', cursive;
 }
 
 /* ------- Body details END -----------*/
-
-
-
 
 
 
@@ -23,7 +23,7 @@ body {
     position: fixed;
     height: 100px;
     width: 100%;
-    background-color: #9e0e18;
+    background-color: #850b13;
     z-index: 1000;
 }
 
@@ -84,7 +84,7 @@ body {
   }
 
 .dropDownBtn:hover {
-    background-color: aqua;
+    background-color: #d7d414;
 }
 
 #duckWokLogo {
@@ -96,22 +96,36 @@ body {
 
 
 
-
-
 /*--------------- Main -------------*/
 
-.main-container {
-    padding-top: 100px;
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 125px;
 }
+
+.contact-photo img{
+    height: 400px;
+    width: 500px;
+}
+
+
+.contact-address {
+    text-align: center;
+}
+
 
 /*--------------- Main END -------------*/
 
 
 
 
-
-
 /*----------------------- Footer Section ---------------*/
+
+footer {
+    margin-top: auto;
+}
 
 .footer-container {
     display: flex;
