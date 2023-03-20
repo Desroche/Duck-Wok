@@ -96,27 +96,53 @@ body {
 
 
 
+
+
 /*--------------- Main -------------*/
 
-.contact-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 125px;
-}
-
-.contact-photo img{
-    height: 400px;
-    width: 500px;
-}
-
-
-.contact-address {
+main {
+    margin-top: 100px;
     text-align: center;
 }
 
+main h1 {
+    font-size: 2.5rem;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    justify-content: space-evenly;
+}
+
+.thai-menu-items h2, .chinese-menu-items h2 {
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.thai-menu-items h3, .chinese-menu-items h3 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.thai-menu-items p, .chinese-menu-items p {
+    font-size: 1.25rem;
+}
+
+.menu-item {
+    margin: 10px;
+    padding: 10px;
+    border: 4px double white;
+}
+
+
+
+
+
 
 /*--------------- Main END -------------*/
+
+
 
 
 
@@ -151,15 +177,12 @@ footer {
 /* ------------ Media Query ---------- */
 
 @media only screen and (max-width:1100px) {
-    .fade-in-container {
+    .menu-container {
+        display: flex;
         flex-direction: column;
     }
-    #fade-image {
-        margin-left: auto;
-        margin-right: auto;
-        padding: 1rem;
-    }
-    #fade-text {
-        text-align: center;
+    .menu-item {
+        margin-left: 6rem;
+        margin-right: 6rem;
     }
 }

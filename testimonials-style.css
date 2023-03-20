@@ -98,21 +98,40 @@ body {
 
 /*--------------- Main -------------*/
 
-.contact-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 125px;
-}
-
-.contact-photo img{
-    height: 400px;
-    width: 500px;
-}
-
-
-.contact-address {
+main {
+    margin-top: 100px;
     text-align: center;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#thai-testimonial {
+    margin: 2rem;
+    padding-top: 1rem;
+    font-size: 1.25rem;
+    animation: 1.5s linear 0s slide-in-left;
+}
+
+#chinese-testimonial {
+    margin: 2rem;
+    padding-top: 12rem;
+    font-size: 1.25rem;
+    animation: 2s linear 0s slide-in-right;
+}
+
+
+
+@keyframes slide-in-left {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0%); }
+}
+
+@keyframes slide-in-right {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(0%); }
 }
 
 
@@ -151,15 +170,16 @@ footer {
 /* ------------ Media Query ---------- */
 
 @media only screen and (max-width:1100px) {
-    .fade-in-container {
+    .testimonial-container {
         flex-direction: column;
+        margin: 2rem;
     }
-    #fade-image {
-        margin-left: auto;
-        margin-right: auto;
-        padding: 1rem;
+    #thai-testimonial {
+        margin: 0%;
+        padding: 0%;
     }
-    #fade-text {
-        text-align: center;
+    #chinese-testimonial {
+        margin: 0%;
+        padding-top: 2rem;
     }
 }
