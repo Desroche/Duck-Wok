@@ -4,6 +4,6 @@ Work in progress
 
 Upcoming changes:
 
--Refactor CSS
--Change menu page to incorporate JS
+-Refactor CSS <br>
+-Change menu page to incorporate JS <br>
 -Edit additional page layouts
